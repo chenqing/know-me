@@ -10,7 +10,7 @@ interview loop, applied to a person instead of a plan.
 ## Install
 
 ```bash
-npx skills add chenqing/know-me-skill --skill know-me
+npx skills add chenqing/know-me --skill know-me
 ```
 
 Or copy `skills/know-me/SKILL.md` into your agent’s skills folder.
