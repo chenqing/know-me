@@ -17,22 +17,26 @@ npx skills add chenqing/know-me --skill know-me
 
 Or copy `skills/know-me/SKILL.md` into your agent’s skills folder.
 
-## Discoverability
+## Listed on / discovery status
 
-Install (works today from GitHub):
+Honest status: **listed** means visible in the directory today; **submitted** means a PR/issue/form is open and not yet accepted.
+
+| Directory | Status | Link |
+|-----------|--------|------|
+| [skills.sh](https://www.skills.sh/chenqing/know-me) | **Listed** (install telemetry) | https://www.skills.sh/chenqing/know-me |
+| GitHub topics | Set | `agent-skills`, `claude-code`, `codex`, `cursor`, `grill-me`, … |
+| [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | PR opened | https://github.com/ComposioHQ/awesome-claude-skills/pull/2169 |
+| [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) | PR opened | https://github.com/travisvn/awesome-claude-skills/pull/1312 |
+| [AgenticSkills](https://agenticskills.io) | Submitted for review | https://github.com/Korona7x17/agenticskills/issues/726 |
+| skills.sh index request | Issue opened | https://github.com/vercel-labs/skills/issues/2452 |
+| [SkillsMP](https://skillsmp.com) | Pending crawl | Needs ≥2 GitHub stars, then auto-index (24–72h) |
+| SkillsAuth / Skills Directory / ClawHub / VoltAgent awesome | Needs manual step | See promo notes in repo discussions / ask maintainer |
+
+Install:
 
 ```bash
 npx skills add chenqing/know-me --skill know-me
 ```
-
-Directory status (honest — submitted ≠ listed):
-
-| Directory | Status | Notes |
-|-----------|--------|-------|
-| [skills.sh](https://skills.sh) | Installable; listing follows install telemetry | No separate submit form |
-| [SkillsMP](https://skillsmp.com) | Pending crawl | Needs ≥2 GitHub stars, then auto-index |
-| GitHub topics | Set | `agent-skills`, `claude-code`, `codex`, `cursor`, … |
-| Awesome lists / curated catalogs | See open PRs / forms below | |
 
 
 ## What it covers
