@@ -1,5 +1,5 @@
 ---
-name: Know me
+name: know-me
 description: >-
   Use when the user wants a multi-layer personal profile built through a
   grilling-style interview (identity narrative, values, decision/stress style,

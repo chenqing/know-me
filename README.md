@@ -17,6 +17,24 @@ npx skills add chenqing/know-me --skill know-me
 
 Or copy `skills/know-me/SKILL.md` into your agent’s skills folder.
 
+## Discoverability
+
+Install (works today from GitHub):
+
+```bash
+npx skills add chenqing/know-me --skill know-me
+```
+
+Directory status (honest — submitted ≠ listed):
+
+| Directory | Status | Notes |
+|-----------|--------|-------|
+| [skills.sh](https://skills.sh) | Installable; listing follows install telemetry | No separate submit form |
+| [SkillsMP](https://skillsmp.com) | Pending crawl | Needs ≥2 GitHub stars, then auto-index |
+| GitHub topics | Set | `agent-skills`, `claude-code`, `codex`, `cursor`, … |
+| Awesome lists / curated catalogs | See open PRs / forms below | |
+
+
 ## What it covers
 
 Thirteen profile layers: identity, life narrative, values, decision style,
