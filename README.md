@@ -1,5 +1,7 @@
 # Know me
 
+![Know me — a layered interview that builds a durable picture of who you are](docs/know-me-hero.jpg)
+
 An agent skill that interviews you one question at a time until it has a
 durable, multi-layer picture of who you are, then saves **confirmed** facts
 to shared memory.
