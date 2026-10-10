@@ -51,6 +51,12 @@ follows that spirit: **no hard cap**. Coverage comes from:
 A thorough first pass is expected to land around **~40–80 questions**, not a
 shallow 15–30 skim. Still exactly one question per turn, in plain language.
 
+## Where answers are stored
+
+- Agents with long-term memory: confirmed facts go to that memory.
+- Agents without memory (e.g. many CLI coding agents): facts go to `~/.know-me/profile.md` (Profile + dated Log sections). The skill offers to reference it from `AGENTS.md` / `CLAUDE.md` so new sessions read it.
+- Every session ends with a copy-pasteable Markdown summary you can paste into any other tool.
+
 ## Theory and research behind the design
 
 The skill keeps grill-me’s interrogation primitive (one question at a time,

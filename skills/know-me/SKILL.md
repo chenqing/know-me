@@ -208,6 +208,60 @@ After each solid answer:
 - Light ack (“Got it.” / “Saved.”). Do not dump the whole profile every turn.
 - If they say “don’t save that,” do not write it.
 
+## Where facts are stored
+
+Pick the first option that exists in the current agent:
+
+1. **Native long-term memory** (e.g. a shared user memory tool): write each confirmed fact there as described in "Writing memory".
+2. **No memory tool, but file access**: write to a local profile file.
+   - Default path: `~/.know-me/profile.md` (create the folder if missing). If the user names another path, use that.
+   - Keep two sections: `## Profile` (stable facts, preferences, jobs, taboos, relationships) and `## Log` (dated events and time-boxed goals, each line prefixed with `YYYY-MM-DD`).
+   - One fact per bullet, in the user's own wording. Update or remove outdated bullets instead of appending contradictions.
+   - Offer once to add a line to the agent's instruction file (`AGENTS.md`, `CLAUDE.md`, or equivalent) such as: `Read ~/.know-me/profile.md at the start of each session for who the user is.` Only edit that file if the user agrees.
+3. **Neither memory nor files**: keep facts in the conversation and rely on the final export below.
+
+Never store anything the user asked you not to save.
+
+## Final export (always)
+
+When the session ends (full pass, second pass, or the user stops early), output one copy-pasteable Markdown block the user can save anywhere:
+
+```markdown
+# About <preferred name>
+_Last updated: YYYY-MM-DD_
+
+## Identity
+- ...
+## Work
+- ...
+## Goals
+- ...
+## Relationships
+- ...
+## Rhythms & health (only what the user shared)
+- ...
+## Values & decision style
+- ...
+## Money / time tradeoffs
+- ...
+## Tools & devices
+- ...
+## How to help me
+- ...
+## Boundaries
+- ...
+## Open gaps
+- ...
+```
+
+Rules for the export:
+
+- Only confirmed facts; no guesses, no clinical labels.
+- Use the user's language for the content (e.g. Chinese if the chat was in Chinese); headings may stay in that language too.
+- Omit empty sections rather than filling them.
+- Put the whole export in a single fenced code block so it copies cleanly.
+- If a profile file was written, say its path in one line above the block.
+
 ## Saturation & stop
 
 **Full-pass mode** (default on first run, or whenever the user asks to finish
