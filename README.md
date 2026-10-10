@@ -25,9 +25,31 @@ check of the agent’s mental model.
 ## Design notes
 
 - One question per turn; plain language only to the user
-- Full first pass in one session by default
+- Full first pass in one session by default; thorough depth (~40–80 questions), not a shallow skim
+- Layer minima + branch deepening instead of a hard question cap (see below)
 - Confirmed semantic facts → profile; dated scenes → log
 - Not therapy, not a personality test
+
+
+## Depth strategy
+
+[grill-me](https://github.com/mattpocock/skills) has **no fixed question
+cap** (docs: 3–50+ is normal; practice often lands around 40–100). Know me
+follows that spirit: **no hard cap**. Coverage comes from:
+
+1. **Layer minima** — core layers (work, relationships, communication, help
+   jobs, rhythms, goals, values, decisions) need **2–3** actionable confirmed
+   facts each; lighter layers need **1–2**.
+2. **Branch deepening** — after each answer, one concrete follow-up (example,
+   exception, constraint, or who else is involved) before leaving the layer,
+   unless the user skips.
+3. **Full-pass + optional second pass** — finish minima first; then deepen the
+   weakest layers (auto-run when the user already asked for thorough /
+   detailed coverage). Saturation (three empty turns) only after minima are
+   met.
+
+A thorough first pass is expected to land around **~40–80 questions**, not a
+shallow 15–30 skim. Still exactly one question per turn, in plain language.
 
 ## Theory and research behind the design
 
